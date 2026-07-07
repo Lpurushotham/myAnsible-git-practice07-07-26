@@ -1,0 +1,8 @@
+---
+- hosts: all
+  become: yes
+  tasks:
+  - name: install apche2 webserver on all node servers(sudo apt-get install apache2 -y)
+    apt: 
+     name: apache2
+     state: present

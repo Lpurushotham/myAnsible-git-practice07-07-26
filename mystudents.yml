@@ -1,0 +1,22 @@
+---
+- mystudents: 
+  - name: anil
+    phno: 9079979989
+    add: 
+      doorno: 1001
+      street: hkjhjkhkjh
+      pin: 7987897
+
+  - name: sunil
+    phno: 988655793
+    add: 
+      doorno: 2002
+      street: jkhjkhjkh
+      pin: 9789787866
+
+  - name: venil
+    phno: 9878986678
+    add: 
+      doorno: 30032
+      street: dsjdjkjh
+      pin: 868686
