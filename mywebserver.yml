@@ -7,7 +7,8 @@
      name: apache2
      state: present
     
-  - name: enable apache2 webserver on all nodes(sudo status apache2 )
-    apt:
-     name: 
+  - name: i want to start apache2 webserver on all nodes(sudo service apache2 start)
+    service:
+     name:
+     state: started 
        
