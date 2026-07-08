@@ -14,7 +14,7 @@
 
 
 [mywebservers:vars]
-key:value
+key=value
 mywebpackage=apache2
 
 

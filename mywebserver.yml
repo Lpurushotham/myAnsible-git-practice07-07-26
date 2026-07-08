@@ -7,12 +7,12 @@
     apt: 
      name: "{{mywebpackage}}" 
      state: present
-    when: ansible_os_family!="debian" 
+    when: ansible_os_family=="Debian" 
      
     
   - name: i want to start apache2 webserver on all nodes(sudo service apache2 start)
     service:
       name: "{{mywebpackage}}" 
       state: started 
-    when: ansible_os_family!="debian" 
+    when: ansible_os_family=="Debian" 
        
