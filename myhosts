@@ -13,4 +13,11 @@
 172.31.48.74
 
 
+[mywebservers:var]
+key:value
+mywebpackage=apache222
+
+
+
+
 

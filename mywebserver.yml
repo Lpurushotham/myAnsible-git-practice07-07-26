@@ -5,14 +5,14 @@
   tasks:
   - name: install apche2 webserver on all node servers(sudo apt-get install apache2 -y)
     apt: 
-     name: apache2 
+     name: "{{mywebpackage}}" 
      state: present
     when: ansible_os_family!="debian" 
      
     
   - name: i want to start apache2 webserver on all nodes(sudo service apache2 start)
     service:
-     name: apache2 
+     name: "{{mywebpackage}}" 
      state: started 
     when: ansible_os_family!="debian" 
        
