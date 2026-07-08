@@ -1,14 +1,16 @@
 ---
 - hosts: all
   become: yes
+  gather_facts: yes
   tasks:
   - name: install apche2 webserver on all node servers(sudo apt-get install apache2 -y)
     apt: 
-     name: apache2
+     name: apache2 
      state: present
+     
     
   - name: i want to start apache2 webserver on all nodes(sudo service apache2 start)
     service:
-     name: apache2 
+     name: apache2 git 
      state: started 
        
