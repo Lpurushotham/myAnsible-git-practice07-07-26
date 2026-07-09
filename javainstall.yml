@@ -6,3 +6,4 @@
     apt:
       name: "{{myjavapackage}}"
       state: present
+      
