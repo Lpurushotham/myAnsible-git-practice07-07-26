@@ -1,9 +1,22 @@
---- 
-- hosts: mywebservers
+---
+- hosts: 172.31.52.45
   become: yes
-  tasks: 
-  - name: install tree
+  tasks:
+  - name: install git(sudo apt-get install git)
     apt:
+     name: git
+     state: present
+    tags: mygit
+  
+
+  - name: install tree(sudo apt-git install tree)
+    apt: 
      name: tree
      state: present
-     
+    tags: mytree 
+
+  - name: install wget(sudo apt-get install wget)
+    apt:
+     name: wget
+     state: present
+    tags: mywget    
