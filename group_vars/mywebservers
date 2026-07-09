@@ -1,6 +1,7 @@
 ---
 mywebpackage: apache2
-myjavapack: openjdk-17-jdk -y
+myjavapack: openjdk-21-jdk
+ 
 
 
 
