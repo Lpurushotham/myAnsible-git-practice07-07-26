@@ -1,5 +1,5 @@
 ---
 mywebpackage: apache2
-myjavapackage: openjdk-17-jdk
+myjavapack: openjdk-17-jdk
 
 

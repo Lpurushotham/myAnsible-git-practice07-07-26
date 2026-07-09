@@ -4,6 +4,6 @@
   tasks: 
   - name: install java
     apt:
-      name: "{{myjavapackage}}"
+      name: "{{myjavapack}}"
       state: present
-      
+
