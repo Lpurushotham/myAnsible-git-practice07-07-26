@@ -1,2 +1,3 @@
 ---
-myjavapack: openjdk-25-jdk -y
+myjavapack: openjdk-17-jdk
+
