@@ -1,3 +1,8 @@
 #SPDX-License-Identifier: MIT-0
 ---
 # tasks file for mywebrole
+- name: i want install apache2 web server
+  apt:
+   name: apache2
+   state: present
+   
