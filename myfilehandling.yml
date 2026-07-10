@@ -13,4 +13,9 @@
     copy:
       src: mytestfile
       dest: /home/lakki/myfolder/mytestfile
+  
+  - name: install apache2 webserver
+    apt:
+     name: apache2
+     status: present
 
