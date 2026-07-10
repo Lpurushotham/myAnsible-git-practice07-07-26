@@ -24,3 +24,9 @@
       src: myindex.j2
       dest: /var/www/html/index.html   
 
+  - name: i want download internet(romote) files
+    get_url:
+      url: https://github.com/Lpurushotham/myAnsible-git-practice07-07-26/blob/main/javainstall.yml
+      dest: /home/lakki/myfolder/javainstall.yml
+      force_basic_auth: yes
+      
