@@ -18,6 +18,7 @@
     apt:
      name: apache2
      state: present
+    notify: restart webserver 
 
   - name: i want to copy index files into node
     template:
@@ -29,4 +30,10 @@
       url: https://github.com/Lpurushotham/myAnsible-git-practice07-07-26/blob/main/javainstall.yml
       dest: /home/lakki/myfolder/javainstall.yml
       force_basic_auth: yes
-      
+
+  handlers:
+  - nmae: restart webserver
+    service:
+      name: apache2
+      state: restarted
+
