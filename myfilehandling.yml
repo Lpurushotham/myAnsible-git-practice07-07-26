@@ -12,5 +12,5 @@
   - name: i want to copy testfile
     copy:
       src: mytestfile
-      dest: /home/lakki/myfolde/mytestfile
+      dest: /home/lakki/myfolder/mytestfile
 
