@@ -23,7 +23,8 @@
   - name: i want to copy index files into node
     template:
       src: myindex.j2
-      dest: /var/www/html/index.html   
+      dest: /var/www/html/index.html 
+    notify: restartwebserver    
 
   - name: i want download internet(romote) files
     get_url:
@@ -36,5 +37,5 @@
     service:
       name: apache2
       state: restarted
-      
+
 
