@@ -17,5 +17,5 @@
   - name: install apache2 webserver
     apt:
      name: apache2
-     status: present
+     state: present
 
