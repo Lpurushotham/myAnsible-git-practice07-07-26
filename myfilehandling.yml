@@ -19,7 +19,7 @@
      name: apache2
      state: present
 
-  - nmae: i want to copy index files into node
+  - name: i want to copy index files into node
     template:
       src: myindex.j2
       dest: /var/www/html/index.html   
