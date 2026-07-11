@@ -1,0 +1,19 @@
+---
+- name: i want to download tar file
+  get_url:
+    url: https://dlcdn.apache.org/tomcat/tomcat-10/v10.1.57/bin/apache-tomcat-10.1.57.tar.gz
+    dest: /home/lakki/apache-tomcat-10.1.57.tar.gz
+    force_basic_auth: yes
+
+- name: i want to create tomcat folder
+  file:
+    path: /opt/tomcat
+    state: directory    
+
+- name: extract tor file into tomcat folder
+  unarchive: 
+    src: /home/lakki/apache-tomcat-10.1.57.tar.gz
+    dest: /opt/tomcat
+    remote_src: yes
+
+    
