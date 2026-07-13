@@ -5,3 +5,7 @@
 - name: change excute permissions on bin folder
   command: sudo sh -c 'chmod +x /opt/tomcat/apache-tomcat-10.1.57/bin/*.sh'
 
+- name: git hub location 
+  command: /home/lakki/myAnsible-git-practice07-07-26
+
+
