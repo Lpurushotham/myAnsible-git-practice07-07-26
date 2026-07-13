@@ -1,7 +1,7 @@
 ---
 - name: change owner on tomcat
-  command: sudo chown -R tomcat /opt/tomcat
+  command: sudo chown -R tomcat /opt/tomcat/apache-tomcat-10.1.57
 
 - name: change excute permissions on bin folder
-  command: sudo sh -c 'chmod +x /opt/tomcat/bin/*.sh'
+  command: sudo sh -c 'chmod +x /opt/tomcat/apache-tomcat-10.1.57/bin/*.sh'
 
